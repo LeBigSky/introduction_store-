@@ -7,10 +7,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="{{ route('home') }}">ENTER DATA</a>
+              <a class="nav-link" href="{{ route('home') }}">DISPLAY MEMBERS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ route('creation') }}">SHOW NAMES</a>
+              <a class="nav-link" href="{{ route('creation') }}">ADD NEW MEMBERS</a>
             </li>
           </ul>
         </div>

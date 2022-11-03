@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AllController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,6 +16,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', [AllController::class, "home"])->name('home');
+Route::get('/', [HomeController::class, "home"])->name('home');
 Route::post('/eleve', [AllController::class, "store"])->name('store.eleve');
 Route::get('creation', [AllController::class, "crea"])->name('creation');

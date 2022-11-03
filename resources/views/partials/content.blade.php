@@ -1,16 +1,10 @@
-<form action="{{ route('store.eleve') }}" method="POST">
-    @csrf
-    <div>
-        <label for="name">Nom</label>
-        <input type="text" name="name" id="name">
+<div class="container">
+    <h1 class="border bg-primary py-2">HOME</h1>
+    @foreach ($eleves as $eleve)
+    <div class="card">
+        <h1>{{ $eleve['name'] }}</h1>
+        <h1>{{ $eleve['metier'] }}</h1>
+        <h1>{{ $eleve['age'] }}</h1>
     </div>
-    <div>
-        <label for="metier">Metier</label>
-        <input type="text" name="metier" id="metier">
-    </div>
-    <div>
-        <label for="age">Age</label>
-        <input type="text" name="age" id="age">
-    </div>
-    <button type="submit">Envoyer</button>
-    </form>
+    @endforeach
+</div>
